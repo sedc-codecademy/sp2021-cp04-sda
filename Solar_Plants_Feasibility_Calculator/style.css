@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400;700&display=swap');
+*{
+    margin: 0px;
+    padding: auto;
+}
+
+body{
+    background-color: #3C78A9;
+}
+
+#header{
+    display: flex;
+    flex: 0 2 0;
+    justify-content: space-between;
+    background-color: #3C78A9;
+    width: 100%;
+    height: 120px;
+    color: white;
+}
+
+#logo, #solarPanelImg{
+    height: 110px;
+    padding-top: 5px;
+}
+
+#logo{
+    padding-left: 5px;
+}
+
+#header>h1{
+    white-space: nowrap;
+    padding-top: 40px;
+    font-weight: 700;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+#header>h1:hover{
+    text-shadow: 4px 4px 25px #FFC908,
+    -4px -4px 25px #FFC908,
+    2px 2px 25px #FFC908,
+    -2px -2px 25px #FFC908
+}
+
+#navBar{
+    top: 0;
+    height: 45px;
+    width: 100%;
+    background-color: #3C78A9;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    
+}
+
+#btnContainer{
+    text-align: right;
+    padding-right: 5px;
+}
+
+.navBtn{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.active{
+    font-weight: 600;
+    text-shadow: 2px 2px 25px #FFC908,
+    -2px -2px 25px #FFC908
+}
+
+#calculatorContainer, #contactContainer, #aboutUsContainer{
+    position: relative;
+    top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    height: 700px;
+    background:rgba(1,1,1,0.5);
+    border: 4px solid white;
+}
+
+#calculatorContainer>h2, #contactContainer>h2, #aboutUsContainer>h2{
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 400;
+
+}
+#homeContainer{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+#solarBackground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#logoBackground{
+    position: absolute;
+    left: 40%;
+    top: 10%;
+}
+
+
+#homeMessage{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#homeMessage>h1{
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 70px;
+}
