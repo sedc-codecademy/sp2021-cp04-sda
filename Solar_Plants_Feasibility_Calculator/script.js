@@ -47,7 +47,7 @@ contactBtn.addEventListener("click", () =>{
 
   let activeEL;
 
-  document.querySelectorAll('button').forEach(e => {
+  btnContainer.querySelectorAll('button').forEach(e => {
     e.addEventListener('click', onButtonClick)
   });
 
