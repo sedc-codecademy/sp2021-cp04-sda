@@ -1,20 +1,14 @@
-let btnContainer = document.getElementById("btnContainer");
-let btns = btnContainer.getElementsByClassName("navBtn");
 let calculatorBtn = document.getElementById("calculator");
 let calculatorContainer = document.getElementById("calculatorContainer");
-let aboutUsBtn = document.getElementById("aboutUs");
 let aboutUsContainer = document.getElementById("aboutUsContainer");
-let contactBtn = document.getElementById("contact");
-let contactContainer = document.getElementById("contactContainer");
 let homeBtn = document.getElementById("homeBtn");
-let homePage = document.getElementById("homeContainer");
 let homeContent = document.getElementById("homeContent");
 let annualValuesContainer = document.getElementById("annualVelueInputs");
 let generateYearsForAnnualValues = document.getElementById("generateBtn");
-// let annualYearsGenerator = document.getElementsByClassName("generateYears");
+let footer = document.getElementById("footer");
+
 
 let years = 0;
-
 generateYearsForAnnualValues.addEventListener("click", () => {
   years = document.getElementById("yearsForAnnualValues").value;
   years++
@@ -568,80 +562,42 @@ generateYearsForAnnualValues.addEventListener("click", () => {
 
 homeBtn.addEventListener("click", () => {
   changePageInView("home");
+  aboutUsContainer.style.display = "block";
+  footer.style.display = "block";
+
+  
 });
 
 calculatorBtn.addEventListener("click", () => {
   changePageInView("calculator");
+  aboutUsContainer.style.display = "none";
+  footer.style.display = "none";
 });
-
-aboutUsBtn.addEventListener("click", () => {
-  changePageInView("about");
-});
-
-contactBtn.addEventListener("click", () => {
-  changePageInView("contact");
-});
-
 const changePageInView = (page) => {
   switch (page) {
     case "home":
       changeDisplay(
         homeContent,
         calculatorContainer,
-        aboutUsContainer,
-        contactContainer,
         homeBtn,
         calculatorBtn,
-        aboutUsBtn,
-        contactBtn
       );
       break;
     case "calculator":
       changeDisplay(
         calculatorContainer,
         homeContent,
-        aboutUsContainer,
-        contactContainer,
         calculatorBtn,
         homeBtn,
-        aboutUsBtn,
-        contactBtn
       );
-      break;
-    case "about":
-      changeDisplay(
-        aboutUsContainer,
-        homeContent,
-        calculatorContainer,
-        contactContainer,
-        aboutUsBtn,
-        homeBtn,
-        calculatorBtn,
-        contactBtn
-      );
-      break;
-    case "contact":
-      changeDisplay(
-        contactContainer,
-        aboutUsContainer,
-        homeContent,
-        calculatorContainer,
-        contactBtn,
-        aboutUsBtn,
-        homeBtn,
-        calculatorBtn
-      );
+      
       break;
     default:
       changeDisplay(
         homeContent,
         calculatorContainer,
-        aboutUsContainer,
-        contactContainer,
         homeBtn,
         calculatorBtn,
-        aboutUsBtn,
-        contactBtn
       );
       break;
   }
@@ -650,12 +606,8 @@ const changePageInView = (page) => {
 const changeDisplay = (
   showEl,
   hideEl,
-  hideSecondEl,
-  hideThirdEl,
   activeBtn,
-  inactiveBtn,
-  inactiveSecondBtn,
-  inactiveThirdBtn
+  inactiveBtn
 ) => {
   if (showEl) {
     showEl.style.display = "block";
@@ -663,22 +615,10 @@ const changeDisplay = (
   if (hideEl) {
     hideEl.style.display = "none";
   }
-  if (hideSecondEl) {
-    hideSecondEl.style.display = "none";
-  }
-  if (hideThirdEl) {
-    hideThirdEl.style.display = "none";
-  }
   if (activeBtn) {
     activeBtn.classList.add("active");
   }
   if (inactiveBtn) {
     inactiveBtn.classList.remove("active");
-  }
-  if (inactiveSecondBtn) {
-    inactiveSecondBtn.classList.remove("active");
-  }
-  if (inactiveThirdBtn) {
-    inactiveThirdBtn.classList.remove("active");
   }
 };
