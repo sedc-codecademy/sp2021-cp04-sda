@@ -5,8 +5,9 @@
   font-family: "Work Sans", sans-serif;
 }
 
+
 body {
-  background-color: black;
+  background-color: #3c78a9;
 }
 body {
   max-width: 100%;
@@ -29,6 +30,7 @@ body {
   padding-top: 5px;
 }
 
+
 #logo {
   padding-left: 5px;
 }
@@ -45,6 +47,7 @@ body {
   text-shadow: 4px 4px 25px #ffc908, -4px -4px 25px #ffc908,
     2px 2px 25px #ffc908, -2px -2px 25px #ffc908;
 }
+
 
 #navBar {
   top: 0;
@@ -99,7 +102,7 @@ body {
 #solarBackground {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 710px;
 }
 
 #logoBackground {
