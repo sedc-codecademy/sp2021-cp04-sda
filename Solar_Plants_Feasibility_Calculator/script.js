@@ -46,7 +46,7 @@ generateYearsForAnnualValues.addEventListener("click", () => {
         }
         bodyDiv.setAttribute("id", `collapse${i}`);
         bodyDiv.setAttribute("aria-labelledby", `heading${i}`)
-        bodyDiv.setAttribute("data-bs-child", "#accordionAnnualValues")
+        bodyDiv.setAttribute("data-bs-parent", "#collapseNine")
         let contentBody = document.createElement("div");
         contentBody.classList.add("accordion-body")
         
