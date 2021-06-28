@@ -12,17 +12,17 @@
 </head>
 
 <body>
-    <header id="header">
+    <div id="header">
         <img src="img/solarDataLogo1.png" alt="Logo" id="logo">
         <h1> SOLAR PLANTS FEASIBILITY </h1>
         <img src="img/solarEnergy.png" alt="solarPanel" id="solarPanelImg">
-    </header>
-    <nav id="navBar">
+    </div>
+    <div id="navBar">
         <div id="btnContainer">
             <button class="navBtn" id="homeBtn"> HOME </button>
             <button class="navBtn" id="calculator"> CALCULATOR </button>
         </div>
-    </nav>
+    </div>
     <div id="homeContent">
         <div id="homeInfo">
             <img src="img/solarDataLogo1.png" alt="backgroundLogo" id="logoBackground">
@@ -1362,7 +1362,29 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <button id="calculateBtn"> Calculate </button>
+                                    <div class="popUpContainer"> 
+                                        <button id="calculateBtn" data-bs-toggle="modal" data-bs-target="#myPopUp"> Calculate </button>
+                                        <div class="modal fade" id="myPopUp" role="dialog">
+                                            <div class="modal-dialog">
+                                            
+                                              <!-- Modal content-->
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                  <h4 class="modal-title">DIALOG</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                  <p>COMING SOON...</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="closeBtn" data-dismiss="modal">Close</button>
+                                                </div>
+                                              </div>
+                                              
+                                            </div>
+                                          </div>
+                                    </div>
+                                    
                                 </div>
                             </div>
                             
@@ -1387,7 +1409,7 @@
                           </div>
                         <div id="footer">
                             <img src="img/contactUs.png" alt="contactUsImg" id="contactUsImg">
-                            <small>&#169; 2021 Angel. All Rights Reserved. </small>
+                            <small>&#169; 2021 cp04-sda. All Rights Reserved. </small>
                         </div>
 </body>
 
