@@ -6,7 +6,8 @@ let homeContent = document.getElementById("homeContent");
 let annualValuesContainer = document.getElementById("annualVelueInputs");
 let generateYearsForAnnualValues = document.getElementById("generateBtn");
 let footer = document.getElementById("footer");
-
+let popUp = document.getElementsByClassName("modal")[0];
+let calculateBtn = document.getElementById("calculateBtn");
 
 let years = 0;
 generateYearsForAnnualValues.addEventListener("click", () => {
@@ -622,3 +623,21 @@ const changeDisplay = (
     inactiveBtn.classList.remove("active");
   }
 };
+
+
+calculateBtn.addEventListener("click", () => {
+  popUp.style.display = "block";
+})
+
+document.getElementsByClassName("close")[0].addEventListener("click", () => {
+    if(popUp.style.display = "block"){
+      popUp.style.display = "none";
+    }
+})
+
+
+document.getElementsByClassName("btnClose")[0].addEventListener("click", () => {
+    if(popUp.style.display = "block"){
+      popUp.style.display = "none";
+    }
+})
