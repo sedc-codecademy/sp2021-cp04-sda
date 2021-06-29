@@ -296,27 +296,19 @@ input{
 }
 
 /* POPUP ========================================== */
-.close{
-  border: none;
-  border-radius: 5px;
-  color: #3c78a9;
-  background-color: white;
-}
 .modal-title{
   color: #3c78a9;
 }
-.modal-header{
-  display: flex;
-  flex-direction: row-reverse;
-}
 .modal-body{
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: #ffc908;
 }
-.closeBtn{
-  border: none;
-  color: #3c78a9;
-  background-color: white;
+
+.btn-close{
+  background-color: #ffc908;
+  
+}
+
+.btn-secondary{
+  color: #ffc908;
+  background-color: #3c78a9;
 }
