@@ -6,7 +6,7 @@ let homeContent = document.getElementById("homeContent");
 let annualValuesContainer = document.getElementById("annualVelueInputs");
 let generateYearsForAnnualValues = document.getElementById("generateBtn");
 let footer = document.getElementById("footer");
-
+let calculateBtn = document.getElementById("calculateBtn")
 
 let years = 0;
 generateYearsForAnnualValues.addEventListener("click", () => {
@@ -559,6 +559,7 @@ generateYearsForAnnualValues.addEventListener("click", () => {
 
   }
 });
+
 
 homeBtn.addEventListener("click", () => {
   changePageInView("home");
